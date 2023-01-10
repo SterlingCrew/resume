@@ -6,83 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="nataly, resume, sa"><!--ключевые слова -->
     <meta name="description" content="Резюме Натальи Новиковой"><!--описание -->
+    <link rel="stylesheet" href="styles.css">
     <title>Resume_NN</title>
 </head>
 <body>
+<div class="container">
+    <div class="info">
+        <img src="imgs/avatar.jpg" alt="ННН" class="avatar"><!--картинка, можно ставить width=150, но лучше стилями классов -->
+        
+        <div class="info-text">
+            <h1>Новикова Наталья</h1>
 
-<img src="imgs/avatar.jpg" width=150 alt="ННН"><!--картинка -->
+            <p>Системный аналитик. <strong>Опыт работы:</strong> 3 года.</p>
+            
 
-    <h1>Новикова Наталья</h1>
+            <p>Я люблю <em>думать, разбираться в новых инструментах, общаться с интересными людьми</em></p>
 
-<p>Системный аналитик. <strong>Опыт работы:</strong> 3 года.</p>
-<hr>
+            <h4><strong> Список социальных сетей:</strong></h4>
+            |<a href="https://t.me/Nataly_no" target="_blank">Telegram</a> <!--ссылки -->
+            |
+        </div>
+    </div>
 
-<p>Я люблю <em> играть в дартс </em></p>
+    <div class="card bg-green">
+        <h2><strong>Мои хобби</strong></h2>
+        <ol class="list"> <!--список нумерованный-->
+            <li>Играть в дартс</li>
+            <li>Ходить пешком</li>
+            <li>Тусить</li>
+            <li>Самокат и скейт</li>
+            <li>Книжки, лекции про психологию и работу мозга</li>
+        </ol>
+    </div>
 
-<h2><strong>Мои хобби</strong></h2>
-<ol> <!--список нумерованный-->
-    <li>Ходить пешком</li>
-    <li>Тусить</li>
-    <li>Самокат и скейт</li>
-    <li>Книжки, лекции про психологию и работу мозга</li>
-</ol>
+    <div class="card bg-yellow">
+        <h2>Опыт работы</h2>
+        <table class="table"> <!-- Табличка -->
+            <!-- <thead>
+                <th>Год</th> 
+                <th>Проект</th> 
+                <th>Роль</th>
+            </thead> -->
+            <tbody>
+            <tr>
+                <td>Новый портал для информационной системы (гос. Заказчик)</td> 
+                <td>Системный аналитик</td>   
+                <td>2022</td>   
+            </tr>
+            <tr>
+                <td>Внедрение систем управления бизнес-процессами и документами (СЭД)</td>   
+                <td>Ведущий аналитик, Руководитель отдела внедрения</td>   
+                <td>2021-2022</td>   
+            </tr>
+            <tr>
+                <td>Внедрение систем управления бизнес-процессами и документами (СЭД)</td>   
+                <td>Аналитик/Специалист по технологиям автоматизации</td>   
+                <td>2019-2021</td>   
+            </tr>
+            </tbody>
 
-<table> <!-- Табличка -->
-    <thead>
-        <th>Год</th> 
-        <th>Проект</th> 
-        <th>Роль</th>
-     </thead>
-    <tbody>
-    <tr>
-        <td>2022</td>   
-        <td>Новый портал для информационной системы (гос. Заказчик)</td>   
-        <td>системный аналитик</td>   
-    </tr>
-    <tr>
-        <td>2021-2022</td>   
-        <td>Внедрение систем управления бизнес-процессами и документами</td>   
-        <td>Ведущий аналитик, Руководитель отдела внедрения</td>   
-       </tr>
-    <tr>
-        <td>2019-2021</td>   
-        <td>Внедрение систем управления бизнес-процессами и документами</td>   
-        <td>Аналитик/Специалист по технологиям автоматизации</td>   
-    </tr>
-    </tbody>
+        </table>
+    </div>
 
-</table>
-<h4><strong> Список социальных сетей:</strong></h4>
-|<a href="https://t.me/Nataly_no" target="_blank">Telegram</a> <!--ссылки -->
-|
+    <div class="card bg-red">
+        <h2>Мои курсы</h2>
+        <ul class="link-list">
+            <li>HTML & CSS − это первый шаг, чтобы стать IT-разработчиком </li>
+            <li><a href="#top" target="_blank">Все курсы</a></li>
+            <!-- ссылка на все мои курсы пока не работает -->
+        </ul>
 
-<h2>Связаться со мной (со мной лучше не связываться)</h2>
-<!-- форма обратной связи -->
-<form action="/"> 
-<div>
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите имя">
-</div>
-<div>
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Введите email">
-</div>
-<div>
-    <label for="message">Ваше сообщение:</label>
+    </div>
+
+
+        
+        <!-- форма обратной связи -->
+        <form action="/" class="form"> 
+            <h2>Связаться со мной (со мной лучше не связываться)</h2>
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div  class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+         </div>
+        <div  class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..." > </textarea>
+        </div>
+        <button type="submit" class="btn">Отправить!</button>  <!-- кнопка -->
+
+        </form>
+
+
     <br>
-    <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..." > </textarea>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
-<button type="submit">Отправить!</button>  <!-- кнопка -->
-
-</form>
-<br>
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </body>
 </html>
